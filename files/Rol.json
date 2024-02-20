@@ -1,0 +1,32 @@
+{
+    "controlador.TDA.listas.DynamicList": {
+        "header": {
+            "info": {
+                "@class": "modelo.Rol",
+                "id": 1,
+                "nombre": "Admin",
+                "descripcion": "Administrador"
+            },
+            "next": {
+                "info": {
+                    "@class": "modelo.Rol",
+                    "id": 2,
+                    "nombre": "Cash",
+                    "descripcion": "Cajero"
+                },
+                "next": {
+                    "info": {
+                        "@class": "modelo.Rol",
+                        "id": 3,
+                        "nombre": "Client",
+                        "descripcion": "Cliente"
+                    }
+                }
+            }
+        },
+        "last": {
+            "@reference": "..\/header\/next\/next" 
+        },
+        "lenght": 3
+    }
+}
